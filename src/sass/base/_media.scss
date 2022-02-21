@@ -29,6 +29,11 @@
             height: 48px;
         }   
     }
+    .carousel {
+        img {
+            width: 90%;
+        }
+    }
 }
 @media (max-width: 991px) {
     .container {
@@ -124,6 +129,61 @@
         &__descr {
             font-size: 19px;
             line-height: 24px;
+        }
+    }
+    .carousel {
+        .slick-dots {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            button {
+                display: none;
+            }
+        }  
+        img {
+            width: 85%;
+            margin: 0 auto;
+        }
+        &__inner {
+            max-width: 650px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 170px;
+            height: 35px;
+            font-size: 15px;
+            line-height: 34px;
+        }
+        &__tabs {
+            margin-top: 35px;
+        }  
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .footer {
+        &__info {
+            width: 400px;
+            height: 230px;
+            padding: 40px 50px 50px 50px;
+        }
+        .addr {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__phone {
+            margin-bottom: 32px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+            img {
+                height: 22px;
+            }
         }
     }
 }
@@ -234,10 +294,84 @@
             }
         }
     }
+    .carousel {
+        img {
+            width: 65%;
+            margin: 0 auto;
+        }
+        &__inner {
+            max-width: 450px;
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 160px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 38px;
+        }
+        .title {
+            font-size: 26px;
+        }
+    }
+    .feed {
+        .title {
+            font-size: 26px;
+        }
+        &__item {
+            margin-top: 80px;
+            &:nth-child(2){
+                margin-top: 50px;
+            }
+        }
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+        &__text {
+            margin-left: 36px;
+            padding-right: 36px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__count {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 200px;
+            height: 130px;
+            padding: 20px 30px 25px 30px;
+        }
+        .addr {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__phone {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__social-item {
+            width: 30px;
+            height: 30px;
+            margin: 0 8px;
+            img {
+                height: 14px;
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .container {
-        max-width: 320px;
+        max-width: 300px;
     }
     .header {
         justify-content: space-around;
@@ -344,6 +478,99 @@
                 font-size: 12px;
                 width: 200px;
             }
+        }
+    }
+    .carousel {
+        padding: 30px 0;
+        .title {
+            font-size: 20px;
+        }
+        img {
+            width: 50%;
+        }
+        &__inner {
+            max-width: 320px;
+        }
+    }
+    .catalog {
+        padding-bottom: 40px;
+        .title {
+            font-size: 20px;
+        }
+        &__tab {
+            width: 120px;
+            height: 30px;
+            font-size: 9px;
+            line-height: 27px;
+        }
+        .catalog-item {
+            width: 270px;
+            min-height: 400px;
+            padding: 15px 15px 20px 15px;
+            margin-bottom: 15px;
+            img {
+                height: 150px;
+            }
+            &__subtitle {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 22px;
+            }
+            &__link {
+                margin-top: 14px;
+                font-size: 12px;
+            }
+            &__old-price {
+                font-size: 13px;
+            }
+            &__price {
+                font-weight: 700;
+                font-size: 18px;
+            }
+            .button_mini {
+                width: 118px;
+                height: 36px;
+                font-size: 14px;
+            }
+            &__list {
+                li {
+                font-size: 12px;
+                }
+            }
+        }
+    }
+    .feed {
+        max-width: 320px;
+        .title {
+            font-size: 20px;
+        }
+        &__item {
+            margin-top: 60px;
+            &:nth-child(2){
+                margin-top: 40px;
+            }
+        }
+        &__img {
+            width: 90px;
+            height: 90px;
+        }
+        &__text {
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+        &__count {
+            font-size: 10px;
+        }
+        &__descr {
+            font-size: 12px;
+            margin-top: 8px;
         }
     }
 }

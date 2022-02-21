@@ -3,7 +3,16 @@ $(document).ready(function(){
         speed: 1200,
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>'
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            }
+        ]
       });
 
     $('ul.catalog__tabs').each(function(i) {
@@ -35,4 +44,20 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //Modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut("slow");
+    }); 
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
   });
