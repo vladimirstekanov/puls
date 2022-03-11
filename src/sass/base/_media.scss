@@ -573,4 +573,39 @@
             margin-top: 8px;
         }
     }
+    .overlay {
+        max-width: 320px;
+        .modal {
+            width: 255px;
+            padding: 20px 20px 20px 20px;
+            min-height: 320px;
+            &__close {
+                right: -19px;
+                font-size: 25px;
+                line-height: 14px;
+            }
+            &__subtitle {
+                font-weight: 700;
+                font-size: 15px;
+            }
+            &__descr {
+                font-weight: 500;
+                font-size: 11px;
+            }
+            .feed-form {
+                width: 216px;
+                input {
+                    height: 40px;
+                    margin-bottom: 10px;
+                    font-size: 11px;
+                    padding: 0 15px;
+                }
+            }
+            .button_submit {
+                height: 36px;
+                font-weight: 500;
+                font-size: 13px;
+            }
+        }
+    }
 }
