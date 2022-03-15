@@ -1,0 +1,20 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    img {
+        width: 100%;
+        color: $main-color;
+    }
+    &_animated {
+        animation-name: bounce;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+   }
+}
